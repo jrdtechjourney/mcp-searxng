@@ -45,11 +45,13 @@
         "postversion": "TAG=$(node scripts/update-version.js | tail -1) && git add src/index.ts .mcp/server.json && git commit --amend --no-edit && git tag -f $TAG"
     },
     "dependencies": {
+        "@hono/node-server": "^1.19.13",
         "@modelcontextprotocol/sdk": "1.29.0",
         "@types/cors": "^2.8.19",
         "@types/express": "^5.0.6",
         "cors": "^2.8.6",
         "express": "^5.2.1",
+        "hono": "^4.12.12",
         "node-html-markdown": "^2.0.0",
         "undici": "^7.24.0"
     },
